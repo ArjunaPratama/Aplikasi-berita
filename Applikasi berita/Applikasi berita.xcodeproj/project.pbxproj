@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212E625AE09F51D39320113A /* Pods_Applikasi_berita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F211B7A38BBD6F9F01E37B /* Pods_Applikasi_berita.framework */; };
+		DC21FEB51FBA91EA00AB8249 /* DataDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEB41FBA91EA00AB8249 /* DataDetailViewController.swift */; };
+		DC21FEB71FBA91FC00AB8249 /* Berita.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEB61FBA91FC00AB8249 /* Berita.swift */; };
+		DC21FEB91FBA921200AB8249 /* BeritaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */; };
+		DC21FEBB1FBA922C00AB8249 /* BeritaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */; };
+		DC7632361FBA8CAE006D7D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7632351FBA8CAE006D7D72 /* AppDelegate.swift */; };
+		DC7632381FBA8CAE006D7D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7632371FBA8CAE006D7D72 /* ViewController.swift */; };
+		DC76323B1FBA8CAE006D7D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7632391FBA8CAE006D7D72 /* Main.storyboard */; };
+		DC76323D1FBA8CAE006D7D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC76323C1FBA8CAE006D7D72 /* Assets.xcassets */; };
+		DC7632401FBA8CAE006D7D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC76323E1FBA8CAE006D7D72 /* LaunchScreen.storyboard */; };
+		DC76324B1FBA8CAE006D7D72 /* Applikasi_beritaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76324A1FBA8CAE006D7D72 /* Applikasi_beritaTests.swift */; };
+		DC7632561FBA8CAE006D7D72 /* Applikasi_beritaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7632551FBA8CAE006D7D72 /* Applikasi_beritaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7632471FBA8CAE006D7D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC76322A1FBA8CAD006D7D72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7632311FBA8CAD006D7D72;
+			remoteInfo = "Applikasi berita";
+		};
+		DC7632521FBA8CAE006D7D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC76322A1FBA8CAD006D7D72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7632311FBA8CAD006D7D72;
+			remoteInfo = "Applikasi berita";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30F211B7A38BBD6F9F01E37B /* Pods_Applikasi_berita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Applikasi_berita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D446F0671BB3E68C19FD981 /* Pods-Applikasi berita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applikasi berita.release.xcconfig"; path = "Pods/Target Support Files/Pods-Applikasi berita/Pods-Applikasi berita.release.xcconfig"; sourceTree = "<group>"; };
+		9E3E1D43A427093D8302BA56 /* Pods-Applikasi berita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applikasi berita.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Applikasi berita/Pods-Applikasi berita.debug.xcconfig"; sourceTree = "<group>"; };
+		DC21FEB41FBA91EA00AB8249 /* DataDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetailViewController.swift; sourceTree = "<group>"; };
+		DC21FEB61FBA91FC00AB8249 /* Berita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berita.swift; sourceTree = "<group>"; };
+		DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewController.swift; sourceTree = "<group>"; };
+		DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewCell.swift; sourceTree = "<group>"; };
+		DC7632321FBA8CAE006D7D72 /* Applikasi berita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Applikasi berita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7632351FBA8CAE006D7D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC7632371FBA8CAE006D7D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC76323A1FBA8CAE006D7D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC76323C1FBA8CAE006D7D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC76323F1FBA8CAE006D7D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC7632411FBA8CAE006D7D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7632461FBA8CAE006D7D72 /* Applikasi beritaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Applikasi beritaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC76324A1FBA8CAE006D7D72 /* Applikasi_beritaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applikasi_beritaTests.swift; sourceTree = "<group>"; };
+		DC76324C1FBA8CAE006D7D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7632511FBA8CAE006D7D72 /* Applikasi beritaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Applikasi beritaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7632551FBA8CAE006D7D72 /* Applikasi_beritaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applikasi_beritaUITests.swift; sourceTree = "<group>"; };
+		DC7632571FBA8CAE006D7D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC76322F1FBA8CAD006D7D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212E625AE09F51D39320113A /* Pods_Applikasi_berita.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7632431FBA8CAE006D7D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC76324E1FBA8CAE006D7D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278392293847F4C9BC1B881C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F211B7A38BBD6F9F01E37B /* Pods_Applikasi_berita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A375B047A7B98194C34AEB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E3E1D43A427093D8302BA56 /* Pods-Applikasi berita.debug.xcconfig */,
+				8D446F0671BB3E68C19FD981 /* Pods-Applikasi berita.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC7632291FBA8CAD006D7D72 = {
+			isa = PBXGroup;
+			children = (
+				DC7632341FBA8CAE006D7D72 /* Applikasi berita */,
+				DC7632491FBA8CAE006D7D72 /* Applikasi beritaTests */,
+				DC7632541FBA8CAE006D7D72 /* Applikasi beritaUITests */,
+				DC7632331FBA8CAE006D7D72 /* Products */,
+				9A375B047A7B98194C34AEB5 /* Pods */,
+				278392293847F4C9BC1B881C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7632331FBA8CAE006D7D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7632321FBA8CAE006D7D72 /* Applikasi berita.app */,
+				DC7632461FBA8CAE006D7D72 /* Applikasi beritaTests.xctest */,
+				DC7632511FBA8CAE006D7D72 /* Applikasi beritaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7632341FBA8CAE006D7D72 /* Applikasi berita */ = {
+			isa = PBXGroup;
+			children = (
+				DC7632351FBA8CAE006D7D72 /* AppDelegate.swift */,
+				DC7632371FBA8CAE006D7D72 /* ViewController.swift */,
+				DC7632391FBA8CAE006D7D72 /* Main.storyboard */,
+				DC76323C1FBA8CAE006D7D72 /* Assets.xcassets */,
+				DC76323E1FBA8CAE006D7D72 /* LaunchScreen.storyboard */,
+				DC7632411FBA8CAE006D7D72 /* Info.plist */,
+				DC21FEB41FBA91EA00AB8249 /* DataDetailViewController.swift */,
+				DC21FEB61FBA91FC00AB8249 /* Berita.swift */,
+				DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */,
+				DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */,
+			);
+			path = "Applikasi berita";
+			sourceTree = "<group>";
+		};
+		DC7632491FBA8CAE006D7D72 /* Applikasi beritaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC76324A1FBA8CAE006D7D72 /* Applikasi_beritaTests.swift */,
+				DC76324C1FBA8CAE006D7D72 /* Info.plist */,
+			);
+			path = "Applikasi beritaTests";
+			sourceTree = "<group>";
+		};
+		DC7632541FBA8CAE006D7D72 /* Applikasi beritaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7632551FBA8CAE006D7D72 /* Applikasi_beritaUITests.swift */,
+				DC7632571FBA8CAE006D7D72 /* Info.plist */,
+			);
+			path = "Applikasi beritaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7632311FBA8CAD006D7D72 /* Applikasi berita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC76325A1FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi berita" */;
+			buildPhases = (
+				F810CA5562C88DD915B8A6FB /* [CP] Check Pods Manifest.lock */,
+				DC76322E1FBA8CAD006D7D72 /* Sources */,
+				DC76322F1FBA8CAD006D7D72 /* Frameworks */,
+				DC7632301FBA8CAD006D7D72 /* Resources */,
+				259A006928F11D7F03335B0A /* [CP] Embed Pods Frameworks */,
+				FBD90D1F1259E1A428FE5B2F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Applikasi berita";
+			productName = "Applikasi berita";
+			productReference = DC7632321FBA8CAE006D7D72 /* Applikasi berita.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC7632451FBA8CAE006D7D72 /* Applikasi beritaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC76325D1FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi beritaTests" */;
+			buildPhases = (
+				DC7632421FBA8CAE006D7D72 /* Sources */,
+				DC7632431FBA8CAE006D7D72 /* Frameworks */,
+				DC7632441FBA8CAE006D7D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7632481FBA8CAE006D7D72 /* PBXTargetDependency */,
+			);
+			name = "Applikasi beritaTests";
+			productName = "Applikasi beritaTests";
+			productReference = DC7632461FBA8CAE006D7D72 /* Applikasi beritaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC7632501FBA8CAE006D7D72 /* Applikasi beritaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7632601FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi beritaUITests" */;
+			buildPhases = (
+				DC76324D1FBA8CAE006D7D72 /* Sources */,
+				DC76324E1FBA8CAE006D7D72 /* Frameworks */,
+				DC76324F1FBA8CAE006D7D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7632531FBA8CAE006D7D72 /* PBXTargetDependency */,
+			);
+			name = "Applikasi beritaUITests";
+			productName = "Applikasi beritaUITests";
+			productReference = DC7632511FBA8CAE006D7D72 /* Applikasi beritaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC76322A1FBA8CAD006D7D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Arjuna;
+				TargetAttributes = {
+					DC7632311FBA8CAD006D7D72 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					DC7632451FBA8CAE006D7D72 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC7632311FBA8CAD006D7D72;
+					};
+					DC7632501FBA8CAE006D7D72 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC7632311FBA8CAD006D7D72;
+					};
+				};
+			};
+			buildConfigurationList = DC76322D1FBA8CAD006D7D72 /* Build configuration list for PBXProject "Applikasi berita" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7632291FBA8CAD006D7D72;
+			productRefGroup = DC7632331FBA8CAE006D7D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7632311FBA8CAD006D7D72 /* Applikasi berita */,
+				DC7632451FBA8CAE006D7D72 /* Applikasi beritaTests */,
+				DC7632501FBA8CAE006D7D72 /* Applikasi beritaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7632301FBA8CAD006D7D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7632401FBA8CAE006D7D72 /* LaunchScreen.storyboard in Resources */,
+				DC76323D1FBA8CAE006D7D72 /* Assets.xcassets in Resources */,
+				DC76323B1FBA8CAE006D7D72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7632441FBA8CAE006D7D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC76324F1FBA8CAE006D7D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		259A006928F11D7F03335B0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Applikasi berita/Pods-Applikasi berita-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Applikasi berita/Pods-Applikasi berita-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F810CA5562C88DD915B8A6FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Applikasi berita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD90D1F1259E1A428FE5B2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Applikasi berita/Pods-Applikasi berita-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC76322E1FBA8CAD006D7D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC21FEB91FBA921200AB8249 /* BeritaTableViewController.swift in Sources */,
+				DC7632381FBA8CAE006D7D72 /* ViewController.swift in Sources */,
+				DC21FEBB1FBA922C00AB8249 /* BeritaTableViewCell.swift in Sources */,
+				DC21FEB51FBA91EA00AB8249 /* DataDetailViewController.swift in Sources */,
+				DC21FEB71FBA91FC00AB8249 /* Berita.swift in Sources */,
+				DC7632361FBA8CAE006D7D72 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7632421FBA8CAE006D7D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC76324B1FBA8CAE006D7D72 /* Applikasi_beritaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC76324D1FBA8CAE006D7D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7632561FBA8CAE006D7D72 /* Applikasi_beritaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7632481FBA8CAE006D7D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7632311FBA8CAD006D7D72 /* Applikasi berita */;
+			targetProxy = DC7632471FBA8CAE006D7D72 /* PBXContainerItemProxy */;
+		};
+		DC7632531FBA8CAE006D7D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7632311FBA8CAD006D7D72 /* Applikasi berita */;
+			targetProxy = DC7632521FBA8CAE006D7D72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7632391FBA8CAE006D7D72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC76323A1FBA8CAE006D7D72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC76323E1FBA8CAE006D7D72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC76323F1FBA8CAE006D7D72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7632581FBA8CAE006D7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC7632591FBA8CAE006D7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC76325B1FBA8CAE006D7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3E1D43A427093D8302BA56 /* Pods-Applikasi berita.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi berita/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-berita";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC76325C1FBA8CAE006D7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D446F0671BB3E68C19FD981 /* Pods-Applikasi berita.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi berita/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-berita";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC76325E1FBA8CAE006D7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi beritaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-beritaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Applikasi berita.app/Applikasi berita";
+			};
+			name = Debug;
+		};
+		DC76325F1FBA8CAE006D7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi beritaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-beritaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Applikasi berita.app/Applikasi berita";
+			};
+			name = Release;
+		};
+		DC7632611FBA8CAE006D7D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi beritaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-beritaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Applikasi berita";
+			};
+			name = Debug;
+		};
+		DC7632621FBA8CAE006D7D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Applikasi beritaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developermuslim.Applikasi-beritaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Applikasi berita";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC76322D1FBA8CAD006D7D72 /* Build configuration list for PBXProject "Applikasi berita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7632581FBA8CAE006D7D72 /* Debug */,
+				DC7632591FBA8CAE006D7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC76325A1FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi berita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC76325B1FBA8CAE006D7D72 /* Debug */,
+				DC76325C1FBA8CAE006D7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC76325D1FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi beritaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC76325E1FBA8CAE006D7D72 /* Debug */,
+				DC76325F1FBA8CAE006D7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7632601FBA8CAE006D7D72 /* Build configuration list for PBXNativeTarget "Applikasi beritaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7632611FBA8CAE006D7D72 /* Debug */,
+				DC7632621FBA8CAE006D7D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC76322A1FBA8CAD006D7D72 /* Project object */;
+}
