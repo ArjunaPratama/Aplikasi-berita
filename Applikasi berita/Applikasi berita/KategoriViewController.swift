@@ -1,5 +1,5 @@
 //
-//  DataDetailViewController.swift
+//  KategoriViewController.swift
 //  Applikasi berita
 //
 //  Created by Jun  on 11/14/17.
@@ -8,26 +8,9 @@
 
 import UIKit
 
-class DataDetailViewController: UIViewController {
+class KategoriViewController: UIViewController {
 
-    @IBOutlet weak var isi: UILabel!
-    
-    @IBOutlet weak var judul: UILabel!
-    @IBOutlet weak var id_categori: UILabel!
-    @IBOutlet weak var gambarr: UIImageView!
-    
-    var passisi:String?
-    var passjudul:String?
-    var passcategori:String?
-    var passgambar:String?
-    
     override func viewDidLoad() {
-        isi.text = passisi!
-        judul.text = passjudul!
-        id_categori.text = passcategori!
-        //gambarr.image = passgambar!
-        
-        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

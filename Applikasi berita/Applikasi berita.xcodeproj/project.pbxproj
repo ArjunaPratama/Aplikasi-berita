@@ -12,6 +12,12 @@
 		DC21FEB71FBA91FC00AB8249 /* Berita.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEB61FBA91FC00AB8249 /* Berita.swift */; };
 		DC21FEB91FBA921200AB8249 /* BeritaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */; };
 		DC21FEBB1FBA922C00AB8249 /* BeritaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */; };
+		DC21FEBD1FBAC60100AB8249 /* KategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEBC1FBAC60100AB8249 /* KategoriTableViewCell.swift */; };
+		DC21FEBF1FBAC62000AB8249 /* KategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEBE1FBAC62000AB8249 /* KategoriTableViewController.swift */; };
+		DC21FEC11FBAC63D00AB8249 /* Kategori.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEC01FBAC63D00AB8249 /* Kategori.swift */; };
+		DC21FEC31FBAC65100AB8249 /* KategoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEC21FBAC65100AB8249 /* KategoriViewController.swift */; };
+		DC21FEC51FBACEA400AB8249 /* BeritaKategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEC41FBACEA400AB8249 /* BeritaKategoriTableViewController.swift */; };
+		DC21FEC71FBACEBB00AB8249 /* BeritaKategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21FEC61FBACEBB00AB8249 /* BeritaKategoriTableViewCell.swift */; };
 		DC7632361FBA8CAE006D7D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7632351FBA8CAE006D7D72 /* AppDelegate.swift */; };
 		DC7632381FBA8CAE006D7D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7632371FBA8CAE006D7D72 /* ViewController.swift */; };
 		DC76323B1FBA8CAE006D7D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7632391FBA8CAE006D7D72 /* Main.storyboard */; };
@@ -46,6 +52,12 @@
 		DC21FEB61FBA91FC00AB8249 /* Berita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berita.swift; sourceTree = "<group>"; };
 		DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewController.swift; sourceTree = "<group>"; };
 		DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewCell.swift; sourceTree = "<group>"; };
+		DC21FEBC1FBAC60100AB8249 /* KategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewCell.swift; sourceTree = "<group>"; };
+		DC21FEBE1FBAC62000AB8249 /* KategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewController.swift; sourceTree = "<group>"; };
+		DC21FEC01FBAC63D00AB8249 /* Kategori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategori.swift; sourceTree = "<group>"; };
+		DC21FEC21FBAC65100AB8249 /* KategoriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriViewController.swift; sourceTree = "<group>"; };
+		DC21FEC41FBACEA400AB8249 /* BeritaKategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewController.swift; sourceTree = "<group>"; };
+		DC21FEC61FBACEBB00AB8249 /* BeritaKategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewCell.swift; sourceTree = "<group>"; };
 		DC7632321FBA8CAE006D7D72 /* Applikasi berita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Applikasi berita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7632351FBA8CAE006D7D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7632371FBA8CAE006D7D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +151,12 @@
 				DC21FEB61FBA91FC00AB8249 /* Berita.swift */,
 				DC21FEB81FBA921200AB8249 /* BeritaTableViewController.swift */,
 				DC21FEBA1FBA922C00AB8249 /* BeritaTableViewCell.swift */,
+				DC21FEBC1FBAC60100AB8249 /* KategoriTableViewCell.swift */,
+				DC21FEBE1FBAC62000AB8249 /* KategoriTableViewController.swift */,
+				DC21FEC01FBAC63D00AB8249 /* Kategori.swift */,
+				DC21FEC21FBAC65100AB8249 /* KategoriViewController.swift */,
+				DC21FEC41FBACEA400AB8249 /* BeritaKategoriTableViewController.swift */,
+				DC21FEC61FBACEBB00AB8249 /* BeritaKategoriTableViewCell.swift */,
 			);
 			path = "Applikasi berita";
 			sourceTree = "<group>";
@@ -354,10 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC21FEBD1FBAC60100AB8249 /* KategoriTableViewCell.swift in Sources */,
 				DC21FEB91FBA921200AB8249 /* BeritaTableViewController.swift in Sources */,
+				DC21FEC31FBAC65100AB8249 /* KategoriViewController.swift in Sources */,
+				DC21FEC51FBACEA400AB8249 /* BeritaKategoriTableViewController.swift in Sources */,
 				DC7632381FBA8CAE006D7D72 /* ViewController.swift in Sources */,
+				DC21FEBF1FBAC62000AB8249 /* KategoriTableViewController.swift in Sources */,
 				DC21FEBB1FBA922C00AB8249 /* BeritaTableViewCell.swift in Sources */,
 				DC21FEB51FBA91EA00AB8249 /* DataDetailViewController.swift in Sources */,
+				DC21FEC71FBACEBB00AB8249 /* BeritaKategoriTableViewCell.swift in Sources */,
+				DC21FEC11FBAC63D00AB8249 /* Kategori.swift in Sources */,
 				DC21FEB71FBA91FC00AB8249 /* Berita.swift in Sources */,
 				DC7632361FBA8CAE006D7D72 /* AppDelegate.swift in Sources */,
 			);

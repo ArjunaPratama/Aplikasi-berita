@@ -1,5 +1,5 @@
 //
-//  BeritaTableViewController.swift
+//  KategoriTableViewController.swift
 //  Applikasi berita
 //
 //  Created by Jun  on 11/14/17.
@@ -7,38 +7,35 @@
 //
 
 import UIKit
-//import liblary
+//menambahkan liblary
 import Alamofire
 import SwiftyJSON
 
-
-class BeritaTableViewController: UITableViewController {
+class KategoriTableViewController: UITableViewController {
     
-    var judulSelected:String?
-    var isiSelected:String?
-    var idSelected:String?
-    var catSelected:String?
-  //  var gambarSelcetd:String?
+    var arrKategori = [[String:String]]()
     
-    var berita = [Berita]()
-    var arrRes = [[String:AnyObject]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //memanggil data json menggunakan alamofire
-        Alamofire.request("http://localhost/ServerBerita/index.php/api/getBerita").responseJSON { (responseData) -> Void in
+        Alamofire.request("http://localhost/ServerBerita/index.php/api/getKategori").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
-                let swiftyJsonVar = JSON(responseData.result.value!)
+                let json = JSON(responseData.result.value!)
                 
-                if let resData = swiftyJsonVar["data"].arrayObject {
-                    self.arrRes = resData as! [[String:AnyObject]]
-                }
-                if self.arrRes.count > 0 {
+                //if json ["data"].arrayObject != nil {
+                    self.arrKategori = json["data"].arrayObject as! [[String:String]]
+                
+                if self.arrKategori.count > 0 {
                     self.tableView.reloadData()
                 }
             }
+        else{
+            print("eror server")
         }
     }
+}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,59 +51,36 @@ class BeritaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return arrRes.count
+        return arrKategori.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BeritaTableViewCell
-        var dict = arrRes[indexPath.row]
-        cell.labeljudul.text = dict["judul"] as? String
-        cell.labelid.text = dict["id_cat"] as? String
-    //    cell.labelgambar.image = dict["gambar"] as! String
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellKategori", for: indexPath) as! KategoriTableViewCell
 
         // Configure the cell...
+        var serverid = arrKategori[indexPath.row]
+        
+        //printserver id
+        var id_kategori = serverid["id_kategori"]
+        let kategori = serverid["nama_kategori"]
+        
+        //pindahkan label
+        cell.labelKategori.text = kategori
 
         return cell
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        //mengecek data yang dikirim
-        print("Row \(indexPath.row)selected")
+    //pindah ke label
+    //dan melempar id kategori
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let task = arrRes[indexPath.row]
-        //memasukan data ke variable namaSelected dan image selected ke masing masing variable nya
-        judulSelected = task["judul"] as? String
-      //  gambarSelcetd = task["gambar"] as! String
-        idSelected = task["id_cat"] as? String
-        isiSelected = task["isi_berita"] as? String
+        //deklarasi idStoryBoard untuk pindah halaman
+        let idStoryBoard = storyboard?.instantiateViewController(withIdentifier: "beritaKategori") as! BeritaKategoriTableViewController
+        let id_kategori = arrKategori[indexPath.row]["id_kategori"]
+        //variable untuk menampung id_kategori yang dilempar
+        idStoryBoard.nampungId = id_kategori!
         
-        
-        
-        
-        
-        
-        //memamnggil segue passDataDetail
-        performSegue(withIdentifier: "PassData", sender: self)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //mengecek apakah segue nya ada atau  tidak`
-        if segue.identifier == "PassData"{
-            //kondisi ketika segue nya ada
-            //mengirimkan data ke detailViewController
-            //        let kirimData = segue.destination as! KontakViewController
-            //mengirimkan data ke masing2 variable
-            //mengirimkan nama wisata
-            
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                let controller = segue.destination as! DataDetailViewController
-                let value = arrRes[indexPath.row]
-                controller.passjudul = value["judul"] as? String
-                controller.passcategori = value["id_cat"] as! String
-                controller.passisi = value["isi_berita"] as? String
-               // controller.passgambar = value["gambar"] as? UIImage
-            }
-        }
+        show(idStoryBoard, sender: self)
     }
 
     /*
